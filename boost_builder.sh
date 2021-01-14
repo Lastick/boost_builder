@@ -9,7 +9,7 @@ cd boost_1_73_0
 INSTALL_DIR=$HOME/build/boost
 
 mkdir -p $INSTALL_DIR
-./bootstrap.sh --with-toolset=clang
+./bootstrap.sh
 ./b2 link=static \
      runtime-link=static \
      --with-chrono \
@@ -23,7 +23,6 @@ mkdir -p $INSTALL_DIR
      --with-context \
      --with-coroutine \
      --with-atomic \
-     toolset=clang \
      threading=multi \
      threadapi=pthread \
      --reconfigure stage \
