@@ -15,7 +15,6 @@ call bootstrap.bat
 b2.exe link=static ^
        runtime-link=static ^
        toolset=msvc ^
-       address-model=64 ^
        architecture=x86 ^
        --with-chrono ^
        --with-date_time ^
